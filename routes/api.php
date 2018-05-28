@@ -13,6 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
+Route::get('pokemons','PokemonsController@index')->name('api.pokemons.index');
+Route::get('pokemons/refresh','PokemonsController@refresh')->name('api.pokemons.refresh');
+Route::get('pokemons/king','PokemonsController@getKing')->name('api.pokemons.kings.get');
+Route::post('pokemons/king','PokemonsController@setKing')->name('api.pokemons.kings.post');

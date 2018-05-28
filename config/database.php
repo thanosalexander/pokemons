@@ -54,21 +54,6 @@ return [
             'engine' => null,
         ],
 
-        'mysql_pokemon_profiles' => [
-            'driver' => 'mysql',
-            'host' => env('DB_HOST_POKEMON_PROFILES', '127.0.0.1'),
-            'port' => env('DB_PORT_POKEMON_PROFILES', '3306'),
-            'database' => env('DB_DATABASE_POKEMON_PROFILES', 'forge'),
-            'username' => env('DB_USERNAME_POKEMON_PROFILES', 'forge'),
-            'password' => env('DB_PASSWORD_POKEMON_PROFILES', ''),
-            'unix_socket' => env('DB_SOCKET_POKEMON_PROFILES', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => false,
-            'engine' => null,
-        ],
-
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),

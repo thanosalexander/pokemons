@@ -18,6 +18,17 @@ mix
 
     .webpackConfig({
 
+        module:{
+
+
+            loaders: [
+                { test: /\.js$/, loader: 'babel', exclude: /node_modules/ }
+            ],
+
+        },
+
+
+
     })
 
     .js('resources/assets/js/pokemons.js', 'public/js')
@@ -32,4 +43,3 @@ mix
      */
     .sourceMaps();
 
-    

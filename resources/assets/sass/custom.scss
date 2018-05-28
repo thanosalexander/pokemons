@@ -1,0 +1,31 @@
+// VUE
+
+[v-cloak] .v-cloak--block {
+  display: block!important;
+}
+
+[v-cloak] .v-cloak--inline {
+  display: inline!important;
+}
+
+[v-cloak] .v-cloak--inlineBlock {
+  display: inline-block!important;
+}
+
+[v-cloak] .v-cloak--hidden {
+  display: none!important;
+}
+
+[v-cloak] .v-cloak--invisible {
+  visibility: hidden!important;
+}
+
+.v-cloak--block,
+.v-cloak--inline,
+.v-cloak--inlineBlock {
+  display: none!important;
+}
+
+
+
+

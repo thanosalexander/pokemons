@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Repositories\Pokemons\PokemonsInterface;
+use App\Repositories\Pokemons\PokemonsRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(PokemonsInterface::class,PokemonsRepository::class);
     }
 }
